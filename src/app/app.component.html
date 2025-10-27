@@ -1,0 +1,281 @@
+<!-- Navigation -->
+<nav class="navbar" [class.scrolled]="true">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <h2>Portfolio</h2>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a (click)="scrollToSection('home')" [class.active]="activeSection === 'home'" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('about')" [class.active]="activeSection === 'about'" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('skills')" [class.active]="activeSection === 'skills'" class="nav-link">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('education')" [class.active]="activeSection === 'education'" class="nav-link">Education</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('experience')" [class.active]="activeSection === 'experience'" class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('projects')" [class.active]="activeSection === 'projects'" class="nav-link">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a (click)="scrollToSection('contact')" [class.active]="activeSection === 'contact'" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Custom Cursor -->
+<div class="custom-cursor"></div>
+
+<!-- Particle Background -->
+<div class="particle-container" #particleContainer>
+  <div class="particle particle-1"></div>
+  <div class="particle particle-2"></div>
+  <div class="particle particle-3"></div>
+  <div class="particle particle-4"></div>
+  <div class="particle particle-5"></div>
+  <div class="particle particle-6"></div>
+  <div class="particle particle-7"></div>
+  <div class="particle particle-8"></div>
+</div>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="hello">Hello, I'm</span>
+        <span class="name">James McCafferty Devers</span>
+      </h1>
+      <p class="hero-subtitle">I'm a <span class="typewriter">{{ typedText }}<span class="cursor-blink">|</span></span></p>
+      <p class="hero-description">
+        Junior .NET Developer with hands-on experience in backend development using C#, .NET Core, SQL, and REST APIs.
+        Skilled in MVC architecture, object-oriented design, and building scalable, maintainable solutions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary" (click)="scrollToSection('projects'); $event.preventDefault()">
+          View My Work
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-secondary" (click)="scrollToSection('contact'); $event.preventDefault()">
+          Get In Touch
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="assets/images/James_McCafferty_Devers_CV.pdf" download="James_McCafferty_Devers_CV.pdf" class="btn btn-secondary">
+          Download CV
+          <i class="fas fa-download"></i>
+        </a>
+      </div>
+      <div class="hero-contact">
+        <p><i class="fas fa-map-marker-alt"></i> Ballina, Ireland</p>
+        <p><i class="fas fa-paper-plane"></i> JamesMcCaffertyDevers12&#64;gmail.com</p>
+        <p><i class="fas fa-phone"></i> 083-386-6364</p>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/jmdvx" target="_blank" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/james-mccafferty-devers/" target="_blank" class="social-link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:JamesMcCaffertyDevers12@gmail.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="image-wrapper parallax">
+        <img src="assets/images/Me (2).png" alt="James - Developer" class="hero-profile-image">
+        <div class="gradient-overlay"></div>
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <a href="#about" (click)="scrollToSection('about'); $event.preventDefault()">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">01.</span>
+      About Me
+    </h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Junior .NET Developer with hands-on experience in backend development using C#, .NET Core, SQL, and REST APIs.
+          Skilled in MVC architecture, object-oriented design, and relational databases. Experienced in building scalable,
+          maintainable solutions and collaborating in Agile teams to deliver high-quality software.
+        </p>
+        <p>
+          I specialize in full-stack development with expertise in C#, .NET Core, Angular, SQL Server, and REST API design.
+          I'm passionate about applying best practices, design patterns, and object-oriented principles to create robust, 
+          efficient software solutions.
+        </p>
+        <p>Key Skills & Technologies:</p>
+        <ul class="tech-list">
+          <li>Languages: C#, JavaScript, TypeScript, Java, Python, SQL</li>
+          <li>Frameworks: Angular, Node.js, .NET Core, SSIS</li>
+          <li>Databases: SQL Server, MySQL, MongoDB</li>
+          <li>Cloud & Tools: AWS, Git, CI/CD, Linux, Windows</li>
+          <li>Practices: Agile, REST API Development, MVC, OOP, Testing, Documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">02.</span>
+      Skills & Technologies
+    </h2>
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <div class="skill-icon">
+          <i [class]="skill.icon"></i>
+        </div>
+        <h3 class="skill-name">{{ skill.name }}</h3>
+        <div class="skill-bar">
+          <div class="skill-progress" [style.width.%]="skill.level"></div>
+        </div>
+        <span class="skill-percentage">{{ skill.level }}%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">03.</span>
+      Education
+    </h2>
+    <div class="education-timeline">
+      <div class="education-item" *ngFor="let edu of educationItems">
+        <div class="education-content">
+          <span class="education-year">{{ edu.year }}</span>
+          <h3 class="education-degree">{{ edu.degree }}</h3>
+          <h4 class="education-institution">{{ edu.institution }}</h4>
+          <p class="education-grade">{{ edu.grade }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">04.</span>
+      Experience
+    </h2>
+    <div class="experience-timeline">
+      <div class="experience-item" *ngFor="let item of experienceItems">
+        <div class="experience-content">
+          <span class="experience-year">{{ item.year }}</span>
+          <h3 class="experience-title">{{ item.title }}</h3>
+          <h4 class="experience-company">{{ item.company }}</h4>
+          <p class="experience-description">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">05.</span>
+      Featured Projects
+    </h2>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <div class="project-image">
+          <img [src]="project.image" [alt]="project.title">
+          <div class="project-overlay">
+            <div class="project-links">
+              <a [href]="project.github" target="_blank" class="project-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a [href]="project.demo" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <ul class="project-technologies">
+            <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">
+      <span class="title-number">06.</span>
+      Get In Touch
+    </h2>
+    <div class="contact-content">
+      <p class="contact-text">
+        I'm open to opportunities in software development and collaboration on projects.
+        Feel free to reach out via email or LinkedIn.
+      </p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+        <a href="mailto:JamesMcCaffertyDevers12@gmail.com" class="btn btn-primary btn-large">
+          Contact Me
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="assets/images/James_McCafferty_Devers_CV.pdf" download="James_McCafferty_Devers_CV.pdf" class="btn btn-secondary btn-large">
+          Download CV
+          <i class="fas fa-download"></i>
+        </a>
+      </div>
+      <div class="contact-details">
+        <p><i class="fas fa-map-marker-alt"></i> Ballina, Ireland</p>
+        <p><i class="fas fa-paper-plane"></i> JamesMcCaffertyDevers12&#64;gmail.com</p>
+        <p><i class="fas fa-phone"></i> 083-386-6364</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 James McCafferty Devers. Built with Angular and passion.</p>
+    <div class="footer-links">
+      <a href="https://github.com/jmdvx" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/james-mccafferty-devers/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:JamesMcCaffertyDevers12@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+

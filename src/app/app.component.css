@@ -1,4 +1,3 @@
-/* Custom Cursor */
 .custom-cursor {
   position: fixed;
   width: 20px;
@@ -17,8 +16,7 @@
   height: 40px;
 }
 
-/* Hero Profile Image */
-.hero-profile-image {
+Hero Profile Image.hero-profile-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -41,8 +39,7 @@
   z-index: 2;
 }
 
-/* Particle Background */
-.particle-container {
+Particle Background.particle-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -145,8 +142,7 @@
   }
 }
 
-/* Typewriter Effect */
-.typewriter {
+Typewriter Effect.typewriter {
   color: var(--primary-color);
   font-weight: 700;
 }
@@ -160,8 +156,7 @@
   51%, 100% { opacity: 0; }
 }
 
-/* Stats Section */
-.stats-section {
+Stats Section.stats-section {
   padding: 4rem 0;
   background: linear-gradient(135deg, rgba(100, 255, 218, 0.05), rgba(79, 172, 254, 0.05));
 }
@@ -229,8 +224,7 @@
   font-size: 1rem;
 }
 
-/* Education Section */
-.education {
+Education Section.education {
   padding: 6rem 0;
   background: linear-gradient(180deg, rgba(2, 12, 27, 0.5), var(--dark-bg));
 }
@@ -319,8 +313,7 @@
   font-weight: 600;
 }
 
-/* Experience Section */
-.experience {
+Experience Section.experience {
   padding: 6rem 0;
   background: linear-gradient(180deg, var(--dark-bg), rgba(2, 12, 27, 0.5));
 }
@@ -420,8 +413,7 @@
   line-height: 1.6;
 }
 
-/* Ripple Effect */
-.ripple {
+Ripple Effect.ripple {
   position: fixed;
   width: 20px;
   height: 20px;
@@ -443,8 +435,7 @@
   }
 }
 
-/* Animations for cards */
-.skill-card, .project-card {
+Animations for cards.skill-card, .project-card {
   opacity: 0;
   transform: translateY(30px);
   transition: all 0.6s ease;
@@ -455,8 +446,7 @@
   transform: translateY(0);
 }
 
-/* Responsive for experience and education */
-@media (max-width: 768px) {
+Responsive for experience and education@media (max-width: 768px) {
   .education-timeline::before,
   .experience-timeline::before {
     left: 20px;

@@ -1,5 +1,4 @@
-/* Global Styles */
-* {
+Global Styles* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,8 +33,7 @@ html {
   padding: 0 2rem;
 }
 
-/* Navigation */
-.navbar {
+Navigation.navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -99,8 +97,7 @@ html {
   animation: slideIn 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
+Hero Section.hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -338,8 +335,7 @@ html {
   }
 }
 
-/* Section Titles */
-.section-title {
+Section Titles.section-title {
   font-size: 2.5rem;
   margin-bottom: 4rem;
   color: var(--light-text);
@@ -354,8 +350,7 @@ html {
   font-size: 1.5rem;
 }
 
-/* About Section */
-.about {
+About Section.about {
   padding: 6rem 0;
   background: linear-gradient(180deg, var(--dark-bg), rgba(2, 12, 27, 0.5));
 }
@@ -432,8 +427,7 @@ html {
   }
 }
 
-/* Skills Section */
-.skills {
+Skills Section.skills {
   padding: 6rem 0;
 }
 
@@ -491,8 +485,7 @@ html {
   color: var(--gray-text);
 }
 
-/* Projects Section */
-.projects {
+Projects Section.projects {
   padding: 6rem 0;
   background: linear-gradient(180deg, rgba(2, 12, 27, 0.5), var(--dark-bg));
 }
@@ -604,8 +597,7 @@ html {
   font-size: 0.9rem;
 }
 
-/* Contact Section */
-.contact {
+Contact Section.contact {
   padding: 6rem 0;
   text-align: center;
 }
@@ -639,8 +631,7 @@ html {
   width: 20px;
 }
 
-/* Footer */
-.footer {
+Footer.footer {
   padding: 2rem 0;
   background-color: rgba(2, 12, 27, 0.8);
   border-top: 1px solid rgba(100, 255, 218, 0.1);
@@ -672,8 +663,7 @@ html {
   transform: translateY(-3px);
 }
 
-/* Animations */
-@keyframes slideIn {
+Animations@keyframes slideIn {
   from {
     width: 0;
   }
@@ -693,8 +683,7 @@ html {
   }
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+Responsive Design@media (max-width: 1024px) {
   .hero-content {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -776,22 +765,19 @@ html {
   }
 }
 
-/* Additional Glow Effects */
-.skill-icon,
+Additional Glow Effects.skill-icon,
 .social-link:hover,
 .project-link:hover {
   text-shadow: 0 0 10px var(--primary-color);
   filter: drop-shadow(0 0 10px var(--primary-color));
 }
 
-/* Smooth Scroll Enhancement */
-section {
+Smooth Scroll Enhancementsection {
   position: relative;
   scroll-margin-top: 80px;
 }
 
-/* Loading Animation */
-@keyframes glow {
+Loading Animation@keyframes glow {
   0%, 100% {
     box-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
   }
@@ -805,8 +791,7 @@ section {
   animation: glow 2s ease-in-out infinite;
 }
 
-/* Scroll Progress Bar */
-html {
+Scroll Progress Barhtml {
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) var(--dark-bg);
 }

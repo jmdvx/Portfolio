@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "james-mccafferty-devers-portfolio",
   "version": "1.0.0",
-  "description": "Personal portfolio website for computer science student",
+  "description": "James McCafferty Devers - Junior .NET Developer Portfolio",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
